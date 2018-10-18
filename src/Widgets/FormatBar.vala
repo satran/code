@@ -32,6 +32,8 @@ public class Code.FormatBar : Gtk.Grid {
     public FormatButton line_toggle;
     private Gtk.Entry goto_entry;
 
+    public Gtk.Entry cmd_entry;
+
     private unowned Scratch.Services.Document? doc = null;
 
     private const string CSS = """
@@ -70,10 +72,15 @@ public class Code.FormatBar : Gtk.Grid {
         line_toggle.icon = new ThemedIcon ("view-continuous-symbolic");
         line_toggle.tooltip_text = _("Line number");
 
-        column_homogeneous = true;
+        cmd_entry = new Gtk.Entry();
+        cmd_entry.expand = true;
+        cmd_entry.primary_icon_gicon = new ThemedIcon ("utilities-terminal-symbolic");
+
+        column_homogeneous = false;
+        add (cmd_entry);
+        add (line_toggle);
         add (tab_toggle);
         add (lang_toggle);
-        add (line_toggle);
 
         create_tabulation_popover ();
         create_language_popover ();
