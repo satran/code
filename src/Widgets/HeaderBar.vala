@@ -163,17 +163,17 @@ namespace Scratch.Widgets {
             format_bar.no_show_all = true;
             set_custom_title (format_bar);
 
-            pack_start (open_button);
-            pack_start (open_folder_button);
-            pack_start (templates_button);
-            pack_start (save_button);
-            pack_start (save_as_button);
-            pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-            pack_start (revert_button);
+            //pack_start (open_button);
+            //pack_start (open_folder_button);
+            //pack_start (templates_button);
+            //pack_start (save_button);
+            //pack_start (save_as_button);
+            //pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+            //pack_start (revert_button);
             pack_end (app_menu);
-            pack_end (share_app_menu);
-            pack_end (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-            pack_end (find_button);
+            //pack_end (share_app_menu);
+            //pack_end (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+            //pack_end (find_button);
 
             show_all ();
 
