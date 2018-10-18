@@ -62,7 +62,7 @@ namespace Scratch.Widgets {
 
             find_button = new Gtk.ToggleButton ();
             find_button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_SHOW_FIND;
-            find_button.image = new Gtk.Image.from_icon_name ("edit-find", Gtk.IconSize.LARGE_TOOLBAR);
+            find_button.image = new Gtk.Image.from_icon_name ("edit-find-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             find_button.tooltip_text = _("Find…");
 
             share_menu = new Gtk.Menu ();
